@@ -17,8 +17,9 @@ for i in input:
         else: break
       _ += 1
   used_all.append(used)
-      
-print(used_all)
+for i in used_all:
+  for j in i:
+    print(j, end=" ")
 
 
 print(input)
