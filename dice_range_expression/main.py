@@ -19,5 +19,3 @@ for i in input:
   used_all.append(used)
 for i in used_all:    
   print(i)
-
-print(input)
