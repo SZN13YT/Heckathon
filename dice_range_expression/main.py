@@ -1,9 +1,14 @@
 with open('./input.txt', 'r') as f:
-  input = [[abs(int(_)) for _ in i.strip().split()] for i in f.readlines()]
+  input = f.read()
 dices = [20, 10, 8, 6, 4, 3, 2]
+#[[abs(int(_)) for _ in i.strip().split()] for i in lines()]
+datas = []
+inp = input.strip().split()
+for i in range(0, len(inp), 2):
+  datas.append([abs(int(inp[i])), abs(int(inp[i+1]))])
 
 used_all = []
-for i in input:
+for i in datas:
   used = ""
   for j in i:
     _ = 0
