@@ -20,4 +20,5 @@ for i in input:
           if _ < len(fibo) -1: print(fibo[_], end=", ")
           else: print(fibo[_])
       else: print("N/A")
+    else: print("N/A")
   except: print("N/A")
