@@ -15,7 +15,7 @@ for i in input:
   try:
     if int(round(float(i), 0)) >= 0:
       fibo = fibonacci(int(round(float(i), 0)))
-      if len(fibo) > 0:
+      if len(fibo) > 1:
         for _ in range(len(fibo)):
           if _ < len(fibo) -1: print(fibo[_], end=", ")
           else: print(fibo[_])
