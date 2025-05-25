@@ -13,12 +13,10 @@ def fibonacci(n):
   return back.strip().split()
 for i in input:
   try:
-    if int(i) >= 0:
-      fibo = fibonacci(int(i))
-      if len(fibo) > 1:
-        for _ in range(len(fibo)):
-          if _ < len(fibo) -1: print(fibo[_], end=", ")
-          else: print(fibo[_])
-      else: print("N/A")
+    fibo = fibonacci(int(i))
+    if len(fibo) > 1:
+      for _ in range(len(fibo)):
+        if _ < len(fibo) -1: print(fibo[_], end=", ")
+        else: print(fibo[_])
     else: print("N/A")
   except: print("N/A")
