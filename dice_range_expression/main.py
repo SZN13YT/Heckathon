@@ -9,14 +9,14 @@ def what_dice(n1, n0, nn):
   d = 0
   for _ in r:
     if n - _ == 0:
-      d += _
+      d += 1
       r[_] += 1
-      return [r, n0 - nn]
+      return [r, n0 - nn + d]
     elif n - _ > 0:
-      d += _
+      d += 1
       r[_] += 1
       n -= _
-  return [r, n0 - nn]
+  return [r, n0 - nn + d]
 
 for i in input:
   pr = False
