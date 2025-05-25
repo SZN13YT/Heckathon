@@ -1,5 +1,6 @@
 with open('./input.txt', 'r') as f:
   input = f.read()
+
 dices = [20, 10, 8, 6, 4, 3, 2]
 #[[abs(int(_)) for _ in i.strip().split()] for i in lines()]
 datas = []
@@ -23,7 +24,7 @@ for i in datas:
       _ += 1
   used_all.append(used)
 
-input = ""
+out = ""
 for i in used_all:
-  input += f"{i}\n"
-print(input.strip())
+  out += f"{i}\n"
+print(out.strip())
