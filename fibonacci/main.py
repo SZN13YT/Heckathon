@@ -14,7 +14,7 @@ def fibonacci(n):
 for i in input:
   try:
     fibo = fibonacci(int(i))
-    if len(fibo) > 1:
+    if len(fibo) > 0:
       for _ in range(len(fibo)):
         if _ < len(fibo) -1: print(fibo[_], end=", ")
         else: print(fibo[_])
