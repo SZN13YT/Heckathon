@@ -1,4 +1,4 @@
-with open('c:/Users/nando/Desktop/Heckathon/dice_range_expression/input.txt', 'r') as f:
+with open('./input.txt', 'r') as f:
   input = [[int(j) for j in i.strip().split()] for i in f.readlines()]
 def what_dice(n1, n0, nn):
   r = {20: 0, 10: 0, 8: 0, 6: 0, 4: 0, 3: 0, 2: 0}
