@@ -29,7 +29,7 @@ def fugg(l, n=8):
     m[2] += l[2]
   for i in range(len(base)):
     if base[i] > 3:
-      base[i] -= 3
+      base[i] -= 3 * (base[i] // 3)
   if base == l and m[1] <= n:
     return m
     
